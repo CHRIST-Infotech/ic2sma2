@@ -1,0 +1,63 @@
+.bg-image{
+    background-image: url('../images/background.png');
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-image-about{
+    background-image: url('../images/1.png');
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-image-submission{
+    background-image: url('../images/2.png');
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-image-committee{
+    background-image: url('../images/3.png');
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.bg-image-registration{
+    background-image: url('../images/4.png');
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-image-about{
+    background-image: url('../images/5.png');
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-dark{
+    background-color: rgb(6, 6, 49) !important;
+    opacity: 0.9;
+}
+
+.container-light{
+    background-color: rgb(255, 255, 255) !important;
+    opacity: 0.9;
+}
+
+.bg-blue{
+    background-color: rgb(6, 6, 49) !important;
+    color: white;
+}
