@@ -39,6 +39,15 @@
     background-size: cover;
 }
 
+.bg-image-instructions{
+    background-image: url('../images/5.png');
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .bg-image-about{
     background-image: url('../images/6.png');
     height: 600px;
