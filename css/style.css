@@ -40,11 +40,16 @@
 }
 
 .bg-image-about{
-    background-image: url('../images/5.png');
+    background-image: url('../images/6.png');
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.container-home{
+    background-color: rgb(68, 76, 77) !important;
+    opacity: 0.9;
 }
 
 .container-dark{
