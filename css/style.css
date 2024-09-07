@@ -58,6 +58,13 @@
 
 .container-home{
     background-color: rgb(68, 76, 77) !important;
+    /* background-color: rgb(255, 255, 255) !important; */
+    opacity: 0.9;
+    border-radius: 0% 0% 4% 4%;
+}
+
+.container-bg-white{
+    background-color: rgb(255, 255, 255) !important;
     opacity: 0.9;
 }
 
