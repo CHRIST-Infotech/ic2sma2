@@ -313,3 +313,716 @@
     transform: translateY(-2px);
     box-shadow: 0 0.35rem 0.9rem rgba(6, 6, 49, 0.14);
 }
+
+.committee-toc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin: 0 0 1.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(6, 6, 49, 0.08);
+}
+
+.committee-toc a {
+    padding: 0.45rem 1.1rem;
+    border: 1px solid rgba(6, 6, 49, 0.15);
+    border-radius: 50rem;
+    background-color: #fff;
+    color: rgb(6, 6, 49);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.committee-toc a:hover {
+    background-color: rgb(6, 6, 49);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.committee-section {
+    scroll-margin-top: 100px;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid rgba(6, 6, 49, 0.08);
+}
+
+.committee-section:last-of-type {
+    border-bottom: none;
+}
+
+.committee-section-label {
+    color: #b05a2a;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.committee-section-title {
+    color: rgb(6, 6, 49);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    margin: 0.35rem 0 1rem;
+}
+
+.committee-divider {
+    width: 48px;
+    height: 3px;
+    margin: 0 auto 2rem;
+    background-color: #b05a2a;
+}
+
+.committee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 1.25rem;
+    text-align: left;
+}
+
+.committee-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem 1.4rem;
+    border: 1px solid rgba(6, 6, 49, 0.1);
+    border-radius: 0.75rem;
+    background-color: #fff;
+    box-shadow: 0 0.15rem 0.5rem rgba(6, 6, 49, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.committee-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1.25rem rgba(6, 6, 49, 0.12);
+}
+
+.committee-avatar {
+    display: grid;
+    flex-shrink: 0;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgb(6, 6, 49);
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.committee-name {
+    margin-bottom: 0.2rem;
+    color: rgb(6, 6, 49);
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.committee-role {
+    margin: 0;
+    color: #5f6570;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.tpc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.9rem;
+    text-align: left;
+}
+
+.tpc-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(6, 6, 49, 0.08);
+    border-radius: 0.6rem;
+    background-color: #fff;
+    box-shadow: 0 0.1rem 0.35rem rgba(6, 6, 49, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tpc-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.35rem 0.9rem rgba(6, 6, 49, 0.1);
+}
+
+.tpc-avatar {
+    display: grid;
+    flex-shrink: 0;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: rgba(176, 90, 42, 0.12);
+    color: #b05a2a;
+    font-size: 0.85rem;
+}
+
+.tpc-name {
+    margin-bottom: 0.1rem;
+    color: rgb(6, 6, 49);
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+.tpc-affiliation {
+    margin: 0;
+    color: #5f6570;
+    font-size: 0.8rem;
+}
+
+.fee-table {
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(6, 6, 49, 0.1);
+    border-radius: 0.75rem;
+    background-color: #fff;
+    box-shadow: 0 0.15rem 0.5rem rgba(6, 6, 49, 0.06);
+}
+
+.fee-table-header {
+    padding: 0.85rem 1.25rem;
+    background-color: rgb(6, 6, 49);
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.fee-table-currency {
+    margin-left: 0.3rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.fee-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fee-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.8rem 1.25rem;
+    border-bottom: 1px solid rgba(6, 6, 49, 0.08);
+    color: rgb(6, 6, 49);
+    font-size: 0.92rem;
+}
+
+.fee-list li:last-child {
+    border-bottom: none;
+}
+
+.fee-amount {
+    flex-shrink: 0;
+    color: #b05a2a;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.fee-note {
+    margin: 0;
+    padding: 0.7rem 1.25rem;
+    background-color: rgba(6, 6, 49, 0.03);
+    color: #5f6570;
+    font-size: 0.82rem;
+}
+
+.payment-status-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+    max-width: 640px;
+    padding: 1.5rem 1.75rem;
+    border: 1px solid rgba(176, 90, 42, 0.25);
+    border-radius: 0.75rem;
+    background-color: rgba(176, 90, 42, 0.06);
+    text-align: left;
+}
+
+.payment-status-icon {
+    display: grid;
+    flex-shrink: 0;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #b05a2a;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.payment-status-title {
+    margin-bottom: 0.3rem;
+    color: rgb(6, 6, 49);
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.payment-status-note {
+    margin: 0;
+    color: #5f6570;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.guideline-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+    text-align: left;
+}
+
+.guideline-card {
+    position: relative;
+    padding: 1.5rem 1.4rem 1.4rem;
+    border: 1px solid rgba(6, 6, 49, 0.1);
+    border-top: 3px solid #b05a2a;
+    border-radius: 0.75rem;
+    background-color: #fff;
+    box-shadow: 0 0.15rem 0.5rem rgba(6, 6, 49, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.guideline-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1.25rem rgba(6, 6, 49, 0.12);
+}
+
+.guideline-number {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0.85rem;
+    border-radius: 50%;
+    background-color: rgb(6, 6, 49);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.guideline-title {
+    margin-bottom: 0.6rem;
+    color: rgb(6, 6, 49);
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.guideline-card ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    color: #5f6570;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.guideline-card ul li:not(:last-child) {
+    margin-bottom: 0.4rem;
+}
+
+.panel-title {
+    margin-bottom: 1rem;
+    color: rgb(6, 6, 49);
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.checklist-card {
+    padding: 1.5rem 1.75rem;
+    border: 1px solid rgba(6, 6, 49, 0.1);
+    border-left: 4px solid #2e7d32;
+    border-radius: 0.75rem;
+    background-color: #fff;
+    box-shadow: 0 0.15rem 0.5rem rgba(6, 6, 49, 0.06);
+    text-align: left;
+}
+
+.checklist-card ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.checklist-card li {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: rgb(6, 6, 49);
+    font-size: 0.95rem;
+}
+
+.checklist-card li:not(:last-child) {
+    margin-bottom: 0.7rem;
+}
+
+.checklist-card li i {
+    color: #2e7d32;
+}
+
+.submission-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 2rem 2.25rem;
+    border: 1px solid rgba(6, 6, 49, 0.1);
+    border-top: 3px solid rgb(6, 6, 49);
+    border-radius: 0.75rem;
+    background-color: #fff;
+    box-shadow: 0 0.15rem 0.5rem rgba(6, 6, 49, 0.06);
+}
+
+.submission-deadline {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 50rem;
+    background-color: rgba(176, 90, 42, 0.1);
+    color: #b05a2a;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.cmt-button {
+    display: inline-block;
+    padding: 0.85rem 2rem;
+    border-radius: 50rem;
+    background-color: rgb(6, 6, 49);
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.cmt-button:hover {
+    background-color: #b05a2a;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1.25rem rgba(6, 6, 49, 0.18);
+}
+
+.info-card {
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(6, 6, 49, 0.1);
+    border-radius: 0.75rem;
+    background-color: #fff;
+    box-shadow: 0 0.15rem 0.5rem rgba(6, 6, 49, 0.06);
+}
+
+.info-card-header {
+    padding: 0.9rem 1.25rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.info-card-body {
+    padding: 1.5rem;
+    line-height: 1.7;
+}
+
+.index-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.index-badge {
+    padding: 0.35rem 0.85rem;
+    border-radius: 50rem;
+    background-color: rgba(6, 6, 49, 0.06);
+    color: rgb(6, 6, 49);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.resource-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.resource-card {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.65rem 1.1rem;
+    border: 1px solid rgba(6, 6, 49, 0.12);
+    border-radius: 0.6rem;
+    background-color: #fff;
+    color: rgb(6, 6, 49);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 0.1rem 0.35rem rgba(6, 6, 49, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resource-card i {
+    color: #b05a2a;
+    font-size: 1.05rem;
+}
+
+.resource-card:hover {
+    color: rgb(6, 6, 49);
+    transform: translateY(-2px);
+    box-shadow: 0 0.35rem 0.9rem rgba(6, 6, 49, 0.12);
+}
+
+.spec-list {
+    margin: 1rem 0 0.5rem;
+    padding: 0;
+    list-style: none;
+}
+
+.spec-list > li {
+    position: relative;
+    margin-bottom: 0.65rem;
+    padding-left: 1.35rem;
+    line-height: 1.55;
+}
+
+.spec-list > li::before {
+    content: "";
+    position: absolute;
+    top: 0.55em;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #b05a2a;
+}
+
+.spec-list ol {
+    margin-top: 0.5rem;
+}
+
+.guideline-accordion .accordion-item {
+    margin-bottom: 0.6rem;
+    border: 1px solid rgba(6, 6, 49, 0.1);
+    border-radius: 0.6rem !important;
+    overflow: hidden;
+}
+
+.guideline-accordion .accordion-button {
+    background-color: #fff;
+    color: rgb(6, 6, 49);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.guideline-accordion .accordion-button:not(.collapsed) {
+    background-color: rgba(6, 6, 49, 0.05);
+    color: rgb(6, 6, 49);
+    box-shadow: none;
+}
+
+.guideline-accordion .accordion-button:focus {
+    border-color: rgba(6, 6, 49, 0.15);
+    box-shadow: none;
+}
+
+.guideline-accordion .accordion-body {
+    color: #5f6570;
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.25rem;
+}
+
+.contact-card {
+    padding: 2rem 1.5rem;
+    border: 1px solid rgba(6, 6, 49, 0.1);
+    border-radius: 0.75rem;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0.15rem 0.5rem rgba(6, 6, 49, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1.25rem rgba(6, 6, 49, 0.12);
+}
+
+.contact-icon {
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background-color: rgb(6, 6, 49);
+    color: #fff;
+    font-size: 1.35rem;
+}
+
+.contact-label {
+    margin-bottom: 0.4rem;
+    color: #b05a2a;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.contact-value {
+    margin: 0;
+    color: rgb(6, 6, 49);
+    font-size: 0.98rem;
+    line-height: 1.5;
+}
+
+.contact-link {
+    color: rgb(6, 6, 49);
+    text-decoration: none;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+.contact-link:hover {
+    color: #b05a2a;
+}
+
+.series-timeline {
+    position: relative;
+}
+
+.series-timeline::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 9px;
+    width: 2px;
+    background-color: rgba(6, 6, 49, 0.15);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 2rem;
+    padding-left: 2.75rem;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgb(6, 6, 49);
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.timeline-dot.dot-upcoming {
+    border-color: #2e7d32;
+}
+
+.timeline-card {
+    padding: 1.25rem 1.5rem;
+    border-radius: 0.75rem;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 0.15rem 0.5rem rgba(6, 6, 49, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.35rem 0.9rem rgba(6, 6, 49, 0.1);
+}
+
+.timeline-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.timeline-title {
+    margin: 0;
+    color: rgb(6, 6, 49);
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.timeline-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.timeline-title a:hover {
+    color: #b05a2a;
+}
+
+.timeline-badge {
+    display: inline-block;
+    flex-shrink: 0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50rem;
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.badge-upcoming {
+    background-color: #2e7d32;
+}
+
+.badge-completed {
+    background-color: rgba(6, 6, 49, 0.75);
+}
+
+.timeline-subtitle {
+    margin: 0 0 0.5rem;
+    color: #5f6570;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.timeline-dates {
+    margin: 0 0 0.5rem;
+    color: #b05a2a;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.timeline-dates i {
+    margin-right: 0.4rem;
+}
+
+.timeline-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: rgb(6, 6, 49);
+    font-size: 0.85rem;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.timeline-link:hover {
+    color: #b05a2a;
+}
